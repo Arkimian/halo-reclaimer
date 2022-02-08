@@ -517,5 +517,34 @@
         <characteristic name="25+&quot;" typeId="d24a-2564-f2d3-9902">--</characteristic>
       </characteristics>
     </profile>
+    <profile id="04be-5d11-fbf1-b774" name="(A) Ground Stomp" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="cd18-1156-04b6-8618">At the end of the Combat phase, you may roll a D6. On a roll of 5+, all other units within 3&quot; recieve 1 damage.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="26dc-5db9-7793-1c98" name="(A) High-Torque Joints" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="cd18-1156-04b6-8618">When this unit makes a sprint action, it may move up to double it&apos;s full movement value.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2392-17a8-33fe-a9de" name="(A) Armored Hull" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="cd18-1156-04b6-8618">When this unit recieves damage, halve the damage dealt (rounding up, to a minimum of 1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="449c-1dca-eda1-4df1" name="(A) Battering Ram" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="cd18-1156-04b6-8618">When this unit makes a charge action against an enemy unit, that enemy must make a 5+ Evasion test, suffering a -1 Evasion modifier for the rest of the battle round on a fail.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5d60-69e6-38e2-07bd" name="(W) CYCLOPS Autocannon" hidden="false" typeId="f582-2df5-b514-de49" typeName="Weapon">
+      <characteristics>
+        <characteristic name="6&quot;" typeId="a2e8-3da0-1a34-54b4">3 RoF, x2 W</characteristic>
+        <characteristic name="12&quot;" typeId="dfff-22ca-9e1d-20e5">3 RoF, x2 W</characteristic>
+        <characteristic name="18&quot;" typeId="d104-4224-79b9-2e2c">3 RoF, x2 B</characteristic>
+        <characteristic name="24&quot;" typeId="8f0a-a483-6a34-3c49">3 RoF, x1 B</characteristic>
+        <characteristic name="25+&quot;" typeId="d24a-2564-f2d3-9902"/>
+      </characteristics>
+    </profile>
   </sharedProfiles>
 </gameSystem>

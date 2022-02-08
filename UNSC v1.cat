@@ -12,6 +12,8 @@
     <categoryEntry id="f118-9903-7f6e-9576" name="Sergeant" hidden="false"/>
     <categoryEntry id="4836-44bc-4d98-b2de" name="Character" hidden="false"/>
     <categoryEntry id="0253-e074-481c-004c" name="Veteran" hidden="false"/>
+    <categoryEntry id="9dc1-7fef-eb76-205d" name="Playtest Material" hidden="false"/>
+    <categoryEntry id="e5c9-dfa5-be78-e06f" name="Vehicle" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2b5d-5921-caf7-37e3" name="Combat Patrol" hidden="false">
@@ -69,12 +71,18 @@
                 <infoLink id="b7e8-2b41-aa37-45b4" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
                 <infoLink id="5e24-3b44-f96b-2460" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a6d5-4b99-0b94-3ad4" name="DMR" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="902a-b4cc-c638-1f7b" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
                 <infoLink id="04d9-b12f-ea2c-4ff3" name="DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -125,6 +133,9 @@
                 <infoLink id="276f-47a4-8df8-c844" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
                 <infoLink id="6541-0f22-0c4a-7120" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="7117-0f67-d3a3-2f7b" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -447,24 +458,36 @@
                 <infoLink id="65e9-63f3-ac1e-c4ce" name="BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
                 <infoLink id="404b-2f1e-81c8-d57d" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="18ac-e3b6-c9ec-9d1c" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="bf6b-880e-102c-b33e" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
                 <infoLink id="30e6-7cac-437e-2496" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="e0d2-17ce-f156-39e8" name="DMR" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="019d-7470-3f5c-48bb" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
                 <infoLink id="8a36-c76e-9073-b02c" name="DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="88a7-ae04-35db-15ac" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="172c-bbb3-3307-6b97" name="Shotgun" hidden="false" targetId="eb15-5c49-1e32-702c" type="profile"/>
                 <infoLink id="779a-d6a1-2560-552b" name="Scatter (Shotgun)" hidden="false" targetId="8382-bb8a-189a-691d" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="dfc4-39d7-b97b-46c0" name="Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -543,23 +566,35 @@
                 <infoLink id="31b2-dd98-a50b-6d22" name="(W) DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
                 <infoLink id="4544-c93a-ad0e-9625" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0765-d658-20a7-5ebc" name="Battle Rifle" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="fd47-9716-c8a9-a65a" name="(W) BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
                 <infoLink id="c095-8586-5616-7f9d" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="a80b-d6ef-44af-b20e" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="2406-5fbd-86b7-c854" name="(W) Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
                 <infoLink id="6819-c566-a968-ab7b" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="b8b5-4269-9a99-5927" name="M7S SMG" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="6346-460d-e574-3114" name="M7S" hidden="false" targetId="2c09-70e4-fb3e-d927" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -617,6 +652,9 @@
                 <infoLink id="dcc9-718b-1697-2ca8" name="(W) DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
                 <infoLink id="3f3d-2d92-bce9-2299" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="4c18-df82-1cc4-7429" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -667,24 +705,36 @@
                 <infoLink id="f4b7-dd0a-cb96-d12b" name="BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
                 <infoLink id="b1fe-9917-9075-de57" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d906-144c-1820-df6a" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="9a09-d656-7b4a-48f4" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
                 <infoLink id="483b-6b90-dd72-d22f" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="4494-aae0-e0c8-f2cc" name="DMR" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="6fe3-0557-6c03-75a8" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
                 <infoLink id="f276-dc69-574f-c124" name="(W) DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9f53-def8-7eb1-32ef" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="1e0f-a7ce-73ce-af9a" name="(W) Shotgun" hidden="false" targetId="eb15-5c49-1e32-702c" type="profile"/>
                 <infoLink id="77a9-1815-e836-66fd" name="Scatter (Shotgun)" hidden="false" targetId="8382-bb8a-189a-691d" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="7406-9fca-111b-295b" name="Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -754,18 +804,27 @@
                 <infoLink id="7449-4cee-deae-41e0" name="BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
                 <infoLink id="c3df-5e5e-fe42-bb5f" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f534-565d-3c64-e969" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="9de0-fb57-e202-19da" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
                 <infoLink id="b45d-22e0-b4c0-ff53" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="f866-7cc7-8f5f-3460" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="8359-9f40-d3c6-cd8e" name="(W) Shotgun" hidden="false" targetId="eb15-5c49-1e32-702c" type="profile"/>
                 <infoLink id="0d17-e137-f95f-db30" name="Scatter (Shotgun)" hidden="false" targetId="8382-bb8a-189a-691d" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -840,11 +899,17 @@
                 <infoLink id="d8fe-923d-782d-a14d" name="(W) BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
                 <infoLink id="857a-5fa8-fcd3-e749" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="31af-8634-07eb-63fe" name="M7S SMG" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="959e-5929-7d45-4156" name="M7S" hidden="false" targetId="2c09-70e4-fb3e-d927" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1013,6 +1078,57 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="116a-e90e-10ba-569c" name="HRUNTING/YGGDRASIL Mk. III Cyclops" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="de5d-389c-99a8-a187" name="HRUNTING/YGGDRASIL Mk. III Cyclops" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">5&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D6</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D4</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D8</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">10</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x2 R</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="c215-a19e-3915-5bae" name="Abilities" hidden="false">
+          <infoLinks>
+            <infoLink id="d1ac-0c9a-3053-c537" name="(A) Ground Stomp" hidden="false" targetId="04be-5d11-fbf1-b774" type="profile"/>
+            <infoLink id="1613-b216-5eaf-f6c5" name="(A) High-Torque Joints" hidden="false" targetId="26dc-5db9-7793-1c98" type="profile"/>
+            <infoLink id="e70c-67d5-647d-f2b5" name="(A) Armored Hull" hidden="false" targetId="2392-17a8-33fe-a9de" type="profile"/>
+            <infoLink id="4388-6abd-4b72-3484" name="(A) Battering Ram" hidden="false" targetId="449c-1dca-eda1-4df1" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="a14d-a31e-907c-a1a0" name="(W) CYCLOPS Autocannon" hidden="false" targetId="5d60-69e6-38e2-07bd" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="552f-4e96-f43e-38e1" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="9a2f-eb42-c369-d5a3" name="New CategoryLink" hidden="false" targetId="9dc1-7fef-eb76-205d" primary="true"/>
+        <categoryLink id="807b-7200-ed91-aeec" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="680f-63e6-a964-2c7f" name="Vehicle" hidden="false" targetId="e5c9-dfa5-be78-e06f" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="61a5-27e4-293f-bf5e" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5510-1062-c269-b75f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3271-3ed9-594c-dd85" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="40.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="80.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

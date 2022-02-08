@@ -40,13 +40,9 @@
     <selectionEntry id="a2d4-4fcd-125f-09b8" name="Tactical Marine" hidden="false" collective="false" import="true" type="model">
       <infoGroups>
         <infoGroup id="784e-c9d7-8dbc-c639" name="Abilities" hidden="false">
-          <profiles>
-            <profile id="12b3-e5e5-1b1c-e4c7" name="Coordinate Fire" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="cd18-1156-04b6-8618"/>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="91d4-0f71-d26a-1397" name="(A) Coordinate Fire" hidden="false" targetId="76ed-cd71-6603-71c7" type="profile"/>
+          </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>

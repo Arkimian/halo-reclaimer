@@ -43,6 +43,7 @@
     <categoryEntry id="b1c9-6623-86c8-3624" name="Supply Limit 4" hidden="false"/>
     <categoryEntry id="25a5-e2df-b17a-851f" name="Supply Limit 5" hidden="false"/>
     <categoryEntry id="5396-45fa-2ec1-0516" name="CFAQ Commander" hidden="false"/>
+    <categoryEntry id="cc1f-04c6-8a37-d10a" name="Playtest Material" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="fc80-a4f5-82f6-6a98" name="Standard" hidden="false">

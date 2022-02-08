@@ -12,7 +12,6 @@
     <categoryEntry id="f118-9903-7f6e-9576" name="Sergeant" hidden="false"/>
     <categoryEntry id="4836-44bc-4d98-b2de" name="Character" hidden="false"/>
     <categoryEntry id="0253-e074-481c-004c" name="Veteran" hidden="false"/>
-    <categoryEntry id="9dc1-7fef-eb76-205d" name="Playtest Material" hidden="false"/>
     <categoryEntry id="e5c9-dfa5-be78-e06f" name="Vehicle" hidden="false"/>
   </categoryEntries>
   <forceEntries>
@@ -33,6 +32,7 @@
         </categoryLink>
         <categoryLink id="8a3b-3816-42d8-f9c1" name="Units" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="false"/>
         <categoryLink id="cec0-07e9-6a6a-3290" name="Elite Units" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="false"/>
+        <categoryLink id="55e9-9356-398c-50a6" name="Playtest Material" hidden="false" targetId="cc1f-04c6-8a37-d10a" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1109,9 +1109,9 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="552f-4e96-f43e-38e1" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
-        <categoryLink id="9a2f-eb42-c369-d5a3" name="New CategoryLink" hidden="false" targetId="9dc1-7fef-eb76-205d" primary="true"/>
         <categoryLink id="807b-7200-ed91-aeec" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
         <categoryLink id="680f-63e6-a964-2c7f" name="Vehicle" hidden="false" targetId="e5c9-dfa5-be78-e06f" primary="false"/>
+        <categoryLink id="2fc3-895e-802d-4762" name="New CategoryLink" hidden="false" targetId="cc1f-04c6-8a37-d10a" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="61a5-27e4-293f-bf5e" name="Supply Limit Modifier" hidden="false" collective="false" import="true">

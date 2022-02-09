@@ -85,6 +85,9 @@
                 <infoLink id="bae6-66bd-f6c7-02ad" name="(W) BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
                 <infoLink id="d10e-920c-b7cb-4cb4" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1187,6 +1190,10 @@
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="b687-b0f8-e189-7e49" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b5c-293c-b94b-7c11" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99e3-9647-6557-e63b" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="225c-3cc9-e51c-0c4e" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -1202,6 +1209,9 @@
                 <infoLink id="5eb8-eb91-3613-4bd1" name="(W) BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
                 <infoLink id="55ac-0377-d669-4629" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="4462-b3b3-5abb-63e5" name="DMR" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>

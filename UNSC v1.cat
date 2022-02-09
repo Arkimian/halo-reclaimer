@@ -80,6 +80,12 @@
                 <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="10e0-77c5-c0c1-e8a8" name="Battle Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="bae6-66bd-f6c7-02ad" name="(W) BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
+                <infoLink id="d10e-920c-b7cb-4cb4" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="a76a-5071-a7b3-dd5b" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
@@ -1084,7 +1090,7 @@
             <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D6</characteristic>
             <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D4</characteristic>
             <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D8</characteristic>
-            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">10</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">12</characteristic>
             <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
             <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x2 R</characteristic>
           </characteristics>
@@ -1092,6 +1098,13 @@
       </profiles>
       <infoGroups>
         <infoGroup id="c215-a19e-3915-5bae" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="fcf0-edf9-8759-cb18" name="(A) Repair Systems" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">During the Start phase, this unit regains D4 lost wounds.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <infoLinks>
             <infoLink id="d1ac-0c9a-3053-c537" name="(A) Ground Stomp" hidden="false" targetId="04be-5d11-fbf1-b774" type="profile"/>
             <infoLink id="1613-b216-5eaf-f6c5" name="(A) High-Torque Joints" hidden="false" targetId="26dc-5db9-7793-1c98" type="profile"/>
@@ -1125,6 +1138,85 @@
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d34b-c6bf-ccbb-bba9" name="Veteran Marine" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4ffe-24df-d767-aa09" name="Veteran Marine" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D6</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D8</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D6</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">8</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="e9cd-e6ea-17ef-edba" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="81c9-b637-6251-0588" name="Well Drilled" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">When this unit recieves a command, roll a D6. On a roll of 6, all requisition points for this command are refunded.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="7fa3-11c8-695f-2eee" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="e25d-7bfb-6939-61c5" name="Marine" hidden="false" targetId="1654-d469-f19d-c3e6" primary="false"/>
+        <categoryLink id="e8a1-52b1-3588-c579" name="Supply Limit 1" hidden="false" targetId="862d-41b5-21ec-3d9f" primary="false"/>
+        <categoryLink id="1a79-9461-1438-e908" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="8d2e-eee4-f7d6-4f5f" name="Veteran" hidden="false" targetId="0253-e074-481c-004c" primary="false"/>
+        <categoryLink id="2eb6-c38b-3ad1-8327" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="88de-7592-f04c-59ad" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfc1-b276-9e86-5552" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="158d-f3ef-1d28-09df" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b687-b0f8-e189-7e49" name="Weapon Option" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="225c-3cc9-e51c-0c4e" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="18bf-1a2e-4657-790a" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
+                <infoLink id="cc9a-2907-8993-df42" name="Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9159-7b6e-a1e0-05bf" name="Battle Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="5eb8-eb91-3613-4bd1" name="(W) BR" hidden="false" targetId="3365-116c-1710-e84e" type="profile"/>
+                <infoLink id="55ac-0377-d669-4629" name="Tight Bullet Spread (Battle Rifle)" hidden="false" targetId="7cdb-9fbf-a1e7-db02" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="4462-b3b3-5abb-63e5" name="DMR" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="f95d-8764-efe0-7527" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
+                <infoLink id="0bf7-8e79-0eb6-625f" name="DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="25.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

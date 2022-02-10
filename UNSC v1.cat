@@ -1104,7 +1104,7 @@
           <profiles>
             <profile id="fcf0-edf9-8759-cb18" name="(A) Repair Systems" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="cd18-1156-04b6-8618">During the Start phase, this unit regains D4 lost wounds.</characteristic>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">During the Start phase, this unit regains 2 lost wounds.</characteristic>
               </characteristics>
             </profile>
           </profiles>

@@ -1302,6 +1302,9 @@
                   <description>When a unit with this weapon makes an attack, it may choose to make a flame spray instead. This allows the unit to split fire up to 6&quot; as opposed to 3&quot;, but imposes a -1 Accuracy modifier.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="c19f-0e1f-9272-f652" name="Defoliant Projector" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>

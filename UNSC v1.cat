@@ -1229,5 +1229,107 @@
         <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="25.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1f08-4628-b4a0-3d35" name="Hellbringer" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="5a4b-bb21-f670-7cc9" name="Hellbringer" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">5&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D8</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D6</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D6</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">8</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="e43b-5957-e115-8421" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="efe0-21c2-eb41-c36c" name="(A) Armored Exosuit" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Reduce incoming damage by 2 (to a minimum of 1).</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="385e-901f-9cba-f004" name="(A) Restrictive Visor" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">When firing at targets further than 6&quot; away, this unit is given a -1 Accuracy modifier.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="455a-1e63-c87b-e88c" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="a4e0-4cfa-ad12-f0f6" name="Marine" hidden="false" targetId="1654-d469-f19d-c3e6" primary="false"/>
+        <categoryLink id="0550-67e6-df22-58f2" name="Playtest Material" hidden="false" targetId="cc1f-04c6-8a37-d10a" primary="true"/>
+        <categoryLink id="bbbd-eb43-2f01-ab1c" name="Supply Limit 1" hidden="false" targetId="862d-41b5-21ec-3d9f" primary="false"/>
+        <categoryLink id="d741-a330-49fd-cfa0" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="32b7-8221-862e-e1c7" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7811-c88d-0096-1d7c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5349-95e7-0ff8-c312" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9c98-746a-3666-c271" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a2a-24d3-f73d-67e6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2d4-e003-5ee2-b773" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f2c5-eefb-99fd-a723" name="Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="2320-5c5c-a268-54a0" name="Flamethrower" hidden="false" typeId="f582-2df5-b514-de49" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="6&quot;" typeId="a2e8-3da0-1a34-54b4">3 RoF, x1 R</characteristic>
+                    <characteristic name="12&quot;" typeId="dfff-22ca-9e1d-20e5">3 RoF, x2 W</characteristic>
+                    <characteristic name="18&quot;" typeId="d104-4224-79b9-2e2c">--</characteristic>
+                    <characteristic name="24&quot;" typeId="8f0a-a483-6a34-3c49">--</characteristic>
+                    <characteristic name="25+&quot;" typeId="d24a-2564-f2d3-9902">--</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="cbaa-7a1c-67cc-b6df" name="Dangerous Spray (Flamethrower)" hidden="false">
+                  <description>When a unit with this weapon makes an attack, it may choose to make a flame spray instead. This allows the unit to split fire up to 6&quot; as opposed to 3&quot;, but imposes a -1 Accuracy modifier.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry id="c19f-0e1f-9272-f652" name="Defoliant Projector" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="6d29-ea2a-4fc1-3545" name="Defoliant Projector" hidden="false" typeId="f582-2df5-b514-de49" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="6&quot;" typeId="a2e8-3da0-1a34-54b4">3 RoF, x2 R</characteristic>
+                    <characteristic name="12&quot;" typeId="dfff-22ca-9e1d-20e5">1 RoF, x1 R</characteristic>
+                    <characteristic name="18&quot;" typeId="d104-4224-79b9-2e2c">--</characteristic>
+                    <characteristic name="24&quot;" typeId="8f0a-a483-6a34-3c49">--</characteristic>
+                    <characteristic name="25+&quot;" typeId="d24a-2564-f2d3-9902">--</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="1744-7839-dcd8-6a14" name="Sulfuric Cartridge (Defoliant Projector)" hidden="false">
+                  <description>When a unit is hit by this weapon, place a flame counter on them. Reduce the unit&apos;s movement speed by 2&quot; for each flame counter on the unit, to a minimum of 2&quot;. Flame counters last until the end of the next Action phase.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="60.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
 </catalogue>

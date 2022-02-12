@@ -1335,5 +1335,154 @@
         <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="60.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="80fd-7e3f-4139-4b4e" name="CRISIS Squad ODST" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="c557-152d-cce8-c140" name="(P) CRISIS Squad ODST" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D8</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D10</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D8</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">9</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">1</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="8ddc-d74c-9970-6790" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="4c43-31cd-9107-ee91" name="(A) Remember Zeta" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">When within 6&quot; of another &apos;CRISIS&apos; unit, this unit may reroll any dice result of 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="7000-f9da-1551-2715" name="(A) War Heroes" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Whenever damage is allocated to this unit, roll a D6. On a natural roll of 6, halve the incoming damage, to a minimum of 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="abf6-bf8a-f115-44ee" name="(A) Sprinting Fire" hidden="false" targetId="d5db-415d-2479-a6f6" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="0c99-ec83-bfe7-2dcd" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="d8d3-beb2-97d4-4ddc" name="ODST" hidden="false" targetId="f69b-28bf-66a5-39a9" primary="false"/>
+        <categoryLink id="a32b-a52d-3f94-9ea3" name="Playtest Material" hidden="false" targetId="cc1f-04c6-8a37-d10a" primary="true"/>
+        <categoryLink id="603f-447a-c2e0-f210" name="Supply Limit 3" hidden="false" targetId="4d0a-3a00-5238-450e" primary="false"/>
+        <categoryLink id="9987-8678-e0d7-f488" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9392-44b9-1523-6b1f" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc61-54d0-a646-871c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="17b8-9f68-c73b-bdfd" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e177-8c62-7045-5e93" name="Weapon Option" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="5533-0116-75d6-7c30" name="George &apos;Doc&apos; Hansen" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="727c-f300-e0df-54fc" name="(W) Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
+                <infoLink id="33c9-84ca-68b0-2bff" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
+                <infoLink id="e75b-d679-df9d-df40" name="(W) Magnum" hidden="false" targetId="d725-8e79-8690-31c2" type="profile"/>
+                <infoLink id="21e1-4b35-d222-403f" name="Sidearm (Magnum)" hidden="false" targetId="d84f-d71c-f82b-1035" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="13ec-8672-b3e0-8edc" name="Rigel &apos;Spook&apos; Major" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="2e3f-9ff5-d5ca-09a4" name="Dual Magnums" hidden="false" typeId="f582-2df5-b514-de49" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="6&quot;" typeId="a2e8-3da0-1a34-54b4">4 RoF, x1 W</characteristic>
+                    <characteristic name="12&quot;" typeId="dfff-22ca-9e1d-20e5">4 RoF, x1 W</characteristic>
+                    <characteristic name="18&quot;" typeId="d104-4224-79b9-2e2c">2 RoF, x1 B</characteristic>
+                    <characteristic name="24&quot;" typeId="8f0a-a483-6a34-3c49">1 RoF, x1 B</characteristic>
+                    <characteristic name="25+&quot;" typeId="d24a-2564-f2d3-9902">1 RoF, x1 B</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="6f2e-b095-2d2c-d91c" name="Sidearm (Magnum)" hidden="false" targetId="d84f-d71c-f82b-1035" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="0dc2-0363-b303-c4eb" name="Andrew &apos;Rookie&apos; Blackburn" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="2b9b-28d8-c31c-cdd4" name="(W) Shotgun" hidden="false" targetId="eb15-5c49-1e32-702c" type="profile"/>
+                <infoLink id="82ea-9698-b7b6-81d3" name="Scatter (Shotgun)" hidden="false" targetId="8382-bb8a-189a-691d" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c9bc-91ca-1776-806f" name="Lieutenant Eric Tors" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="3357-9e8d-6657-6a22" name="(P) CRISIS Squad ODST" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D8</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D10</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D8</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">10</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">1</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="c886-545e-c77b-2eba" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="d77b-2d9a-acf5-95f6" name="(A) Remember Zeta" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">When within 6&quot; of another &apos;CRISIS&apos; unit, this unit may reroll any dice result of 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="c4c5-c1af-aec0-5fa5" name="(A) War Heroes" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Whenever damage is allocated to this unit, roll a D6. On a natural roll of 6, halve the incoming damage, to a minimum of 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2f55-85ca-87e2-b914" name="(A) CRISIS Actual" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">During either the Action or Combat phase, this unit may choose to activate both itself and another &apos;CRISIS&apos; unit simultaneously.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="e446-c4cd-ba0e-3d1a" name="(A) Sprinting Fire" hidden="false" targetId="d5db-415d-2479-a6f6" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="7158-fb1f-57fa-1de1" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="d8a6-a85f-263e-be9a" name="ODST" hidden="false" targetId="f69b-28bf-66a5-39a9" primary="false"/>
+        <categoryLink id="a023-36a2-53a3-40d8" name="Playtest Material" hidden="false" targetId="cc1f-04c6-8a37-d10a" primary="true"/>
+        <categoryLink id="f49e-85f9-aab3-6565" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="bbb9-6d53-e1f5-bf42" name="Character" hidden="false" targetId="4836-44bc-4d98-b2de" primary="false"/>
+        <categoryLink id="9877-a790-0d40-f20d" name="Character" hidden="false" targetId="4836-44bc-4d98-b2de" primary="false"/>
+        <categoryLink id="0d8f-6d9b-f163-a31b" name="Supply Limit 1" hidden="false" targetId="862d-41b5-21ec-3d9f" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="80.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
 </catalogue>

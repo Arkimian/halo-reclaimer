@@ -1389,6 +1389,10 @@
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="e177-8c62-7045-5e93" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b559-f710-8742-5c80" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f3b-0e0f-5fa6-f0c2" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="5533-0116-75d6-7c30" name="George &apos;Doc&apos; Hansen" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -1416,6 +1420,9 @@
               <infoLinks>
                 <infoLink id="6f2e-b095-2d2c-d91c" name="Sidearm (Magnum)" hidden="false" targetId="d84f-d71c-f82b-1035" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0dc2-0363-b303-c4eb" name="Andrew &apos;Rookie&apos; Blackburn" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>

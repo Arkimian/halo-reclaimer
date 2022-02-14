@@ -1205,6 +1205,9 @@
         <categoryLink id="8753-b879-b552-37ba" name="Elite" hidden="false" targetId="f68e-47cd-891e-6f9b" primary="false"/>
         <categoryLink id="c283-a182-efe1-1184" name="Zealot" hidden="false" targetId="0df7-a746-9fc0-d263" primary="false"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="297a-4cc6-620c-381e" name="Sangheili Zealot" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -1240,6 +1243,12 @@
           </infoLinks>
         </infoGroup>
       </infoGroups>
+      <categoryLinks>
+        <categoryLink id="a4f1-5ac0-dcf2-f094" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="be23-b4cc-c6d5-faed" name="Elite" hidden="false" targetId="f68e-47cd-891e-6f9b" primary="false"/>
+        <categoryLink id="5488-1179-da3b-0a6c" name="New CategoryLink" hidden="false" targetId="f36e-d244-83b2-0dc2" primary="true"/>
+        <categoryLink id="193a-24fe-e555-4c42" name="Zealot" hidden="false" targetId="0df7-a746-9fc0-d263" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="d995-71fa-ee5a-ee19" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
           <constraints>
@@ -1264,6 +1273,9 @@
                 <infoLink id="5637-c2c2-c9df-ba58" name="Melee Weapon (Any Melee Weapon)" hidden="false" targetId="885a-dab6-3fe2-2322" type="rule"/>
                 <infoLink id="c28c-4695-e69d-d0ba" name="(W) Energy Sword" hidden="false" targetId="bee8-481d-e5d6-bff5" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="3075-aecf-b4d0-6b8d" name="Dual Plasma Rifles" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -1271,6 +1283,9 @@
                 <infoLink id="d289-b2b0-a537-a33a" name="Inaccurate (Dual Plasma Rifles)" hidden="false" targetId="cd86-ad78-97db-3e7b" type="rule"/>
                 <infoLink id="9929-b1e2-27da-9a33" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>

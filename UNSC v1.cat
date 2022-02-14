@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0f09-b5d1-4420-7df7" name="UNSC" revision="2" battleScribeVersion="2.03" authorName="Rose Napier,  NapierArts" library="false" gameSystemId="8913-c2d7-6830-9155" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0f09-b5d1-4420-7df7" name="UNSC" revision="3" battleScribeVersion="2.03" authorName="Rose Napier,  NapierArts" library="false" gameSystemId="8913-c2d7-6830-9155" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="96a7-cc44-f061-1538" name="Human" hidden="false"/>
     <categoryEntry id="b488-2e25-d904-ceb2" name="UNSC" hidden="false"/>
@@ -13,6 +13,7 @@
     <categoryEntry id="4836-44bc-4d98-b2de" name="Character" hidden="false"/>
     <categoryEntry id="0253-e074-481c-004c" name="Veteran" hidden="false"/>
     <categoryEntry id="e5c9-dfa5-be78-e06f" name="Vehicle" hidden="false"/>
+    <categoryEntry id="4ce7-79ea-dc44-bfc4" name="Militia" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2b5d-5921-caf7-37e3" name="Combat Patrol" hidden="false">
@@ -1489,6 +1490,188 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5f59-489f-d35f-0e21" name="Militia Footman" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="6532-21a7-f967-6922" name="Militia Footman" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D4</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D6</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D4</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">6</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="c57e-4a79-614e-9934" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="a497-c3a2-661b-c858" name="Fight to the Last" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">When this unit is wounded, increase its Accuracy and Martial characteristics to D6.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="e4b1-a834-5675-41fa" name="Questionable Loyalties" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Whenever an allied unit is slain within 6&quot; of this unit, roll a D6. On a roll of 1 or 2, this unit is removed from play and is considered slain.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="094f-43e5-ad78-8bb7" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="0181-da81-4f75-aba4" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="2b50-6c2f-17f1-4f83" name="Supply Limit 5" hidden="false" targetId="25a5-e2df-b17a-851f" primary="false"/>
+        <categoryLink id="cfee-f509-9f55-eea5" name="Militia" hidden="false" targetId="4ce7-79ea-dc44-bfc4" primary="false"/>
+        <categoryLink id="ca43-752c-d410-6d08" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bdf0-b12d-55e5-f6d4" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="906e-5f3a-46d4-7cdf" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1bf3-889e-32ef-dc38" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="99b1-0ec7-a276-d624" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ae0-c62e-5a5b-2a9b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b76c-64e7-9aaa-fa05" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a9c3-3986-6c90-2adb" name="Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="2bd0-7013-bc00-ba26" name="Hail of Fire (Assault Rifle/HMG)" hidden="false" targetId="f158-87ba-da8a-23a7" type="rule"/>
+                <infoLink id="2b11-69f0-06e7-3067" name="(W) Assault Rifle" hidden="false" targetId="8c09-2a71-8b20-d225" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0e38-8e1d-0858-52d4" name="DMR" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="24ff-f22b-a2d2-c800" name="Precision (DMR)" hidden="false" targetId="fc98-bb28-d077-75e7" type="rule"/>
+                <infoLink id="1570-bff4-28b3-ad30" name="(W) DMR" hidden="false" targetId="3d68-32a0-683e-65e5" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dd7b-2ecc-5b0a-ad24" name="Magnum" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="7d40-9330-df77-0632" name="(W) Magnum" hidden="false" targetId="d725-8e79-8690-31c2" type="profile"/>
+                <infoLink id="76ea-bfad-4dcf-0984" name="Sidearm (Magnum)" hidden="false" targetId="d84f-d71c-f82b-1035" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="29fd-531c-00a4-5271" name="Militia Doorkicker" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="63f7-7256-eeff-7c84" name="Militia Doorkicker" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">6</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D4</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D6</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D4</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">6</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">--</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="a672-febb-d121-4f13" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="bdb9-9121-4421-e430" name="Fight to the Last" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">When this unit is wounded, increase its Accuracy and Martial characteristics to D6.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="5086-d309-5681-0fe9" name="Questionable Loyalties" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Whenever an allied unit is slain within 6&quot; of this unit, roll a D6. On a roll of 1 or 2, this unit is removed from play and is considered slain.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="936c-cf38-3557-44c4" name="Rapid-Fire" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">If this unit targets a unit within PB (6&quot;) range with a ranged attack, it may roll a D6. On a roll of 5 or 6, it may immediately make another ranged attack against the same target unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="8f1e-7532-7d87-5b02" name="Human" hidden="false" targetId="96a7-cc44-f061-1538" primary="false"/>
+        <categoryLink id="51e5-f50b-ae4f-0fb6" name="Militia" hidden="false" targetId="4ce7-79ea-dc44-bfc4" primary="false"/>
+        <categoryLink id="e83d-ccc4-4c50-6ce5" name="Supply Limit 2" hidden="false" targetId="1ffc-e260-74c1-ce78" primary="false"/>
+        <categoryLink id="c608-494b-881b-d75b" name="UNSC" hidden="false" targetId="b488-2e25-d904-ceb2" primary="false"/>
+        <categoryLink id="e69a-8dbd-5602-0d00" name="New CategoryLink" hidden="false" targetId="ee03-0925-7d9b-aa57" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fe0a-8ae9-ef14-f98a" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e8b-f23a-ec7b-fb88" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="21b9-03d0-bb93-882a" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f6c0-a745-778e-4848" name="Weapon Option" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="3baf-cfa5-a81b-bc07" name="M7 SMG" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="e65f-28d8-4435-5f56" name="(W) M7 SMG" hidden="false" typeId="f582-2df5-b514-de49" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="6&quot;" typeId="a2e8-3da0-1a34-54b4">6 RoF, x1 B</characteristic>
+                    <characteristic name="12&quot;" typeId="dfff-22ca-9e1d-20e5">4 RoF, x1 B</characteristic>
+                    <characteristic name="18&quot;" typeId="d104-4224-79b9-2e2c">2 RoF, x1 B</characteristic>
+                    <characteristic name="24&quot;" typeId="8f0a-a483-6a34-3c49">--</characteristic>
+                    <characteristic name="25+&quot;" typeId="d24a-2564-f2d3-9902">--</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="56f0-d7c7-7da8-497e" name="Short, Controlled Bursts (SMG)" hidden="false">
+                  <description>Before making an attack with this weapon, you may choose to perform Short, Controlled Bursts. For the purposes of this attack, halve the RoF and change the damage die from blue to white.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry id="1c58-0d39-acef-c28b" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="4fa3-c9cb-31db-94c5" name="Magnum Slugs (Militia Shotgun)" hidden="false">
+                  <description>After hitting a target with a ranged attack with this weapon, remove one point of shields before continuing damage calculations.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="409c-d86d-8bcb-b232" name="(W) Shotgun" hidden="false" targetId="eb15-5c49-1e32-702c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="20.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

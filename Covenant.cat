@@ -1033,6 +1033,9 @@
                 <infoLink id="13f0-693a-6239-e4bf" name="Disorientating Blast (Concussion Rifle)" hidden="false" targetId="9cc4-7681-441f-9f73" type="rule"/>
                 <infoLink id="3b69-594b-84d2-9418" name="Blast X&quot; (Blast Weapons)" hidden="false" targetId="9644-d14a-7e54-6bcf" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1125,8 +1128,156 @@
             <infoLink id="60a3-5456-35b0-a892" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
             <infoLink id="0d7e-6e20-9dc2-427d" name="(A) Parry" hidden="false" targetId="211e-91fe-ddd5-ccfe" type="profile"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="91bd-6cd7-4bdb-0fde" name="Fleetmaster Rho &apos;Barutamee" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03d2-ae53-caed-3c8a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f356-b413-6b68-49f8" name="Fleetmaster Rho &apos;Barutamee" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">7</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D12</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D8</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D12</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">12</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">4</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R x1 W</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="14d2-a3e7-5247-02bb" name="(A) We Swore An Oath" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="cd18-1156-04b6-8618">Once per battle round, after this unit has a ranged attack resolved against it - it may immediately make a free ranged attack back at the original unit (as long as it is an applicable target).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5d55-ccd2-abcd-b147" name="(A) Honourbound Till Death" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="cd18-1156-04b6-8618">This unit may activate in the combat phase to use this ability instead of an attack or other action. Target a &apos;Zealot&apos; unit within 3&quot;; it regains D6 lost hit points.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bdc4-cdbc-4923-b79b" name="Master of War" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="cd18-1156-04b6-8618">Double he supply limit on all non-character &apos;Zealot&apos; units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="94d1-cb10-1f25-89c0" name="High Value Target" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="cd18-1156-04b6-8618">Should Rho &apos;Barutamee be slain, all enemy players get an additional Requisition point during the start phase of each turn for the rest of the game.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1bf8-7d06-c436-c6eb" name="Zealous Order" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="cd18-1156-04b6-8618">Any &apos;Zealot&apos; unit within 6&quot; of this unit (excluding itself) may reroll one attack roll of 1 per attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bfe6-fa83-2f8e-5d1f" name="Tactical Brilliance" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="cd18-1156-04b6-8618">Once per battle, you may forego rolling for initiative, instead automatically seizing it.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3d6a-77a2-dae8-409d" name="Sly Specimen" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="cd18-1156-04b6-8618">If Rho &apos;Barutamee is slain, you may still use the &apos;Combat Roll&apos; and &apos;Stand Against Heresy&apos; commands.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6238-597e-8b02-9249" name="(W) Energy Sword" hidden="false" targetId="bee8-481d-e5d6-bff5" type="profile"/>
+        <infoLink id="5daa-ec02-859b-7d90" name="(W) Needle Rifle" hidden="false" targetId="0c1c-794e-c611-237b" type="profile"/>
+        <infoLink id="f43b-f84e-893c-2bac" name="Supercombine (Needle Weapons)" hidden="false" targetId="38cd-2aa0-911f-0492" type="rule"/>
+        <infoLink id="c1be-1b0b-8352-e10a" name="Melee Weapon (Any Melee Weapon)" hidden="false" targetId="885a-dab6-3fe2-2322" type="rule"/>
+        <infoLink id="62b0-7e52-e58a-021b" name="(A) Parry" hidden="false" targetId="211e-91fe-ddd5-ccfe" type="profile"/>
+        <infoLink id="6eba-58e1-1372-8148" name="(A) Advanced Shields" hidden="false" targetId="9c2f-e27b-1c94-10ac" type="profile"/>
+        <infoLink id="5cf7-3dc2-03a4-c972" name="(A) Farsight" hidden="false" targetId="96b3-ab9e-4e5b-40a7" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="56da-07bf-5aac-a458" name="New CategoryLink" hidden="false" targetId="5396-45fa-2ec1-0516" primary="true"/>
+        <categoryLink id="d308-900e-9b5c-fdc9" name="Character" hidden="false" targetId="4f4d-9b88-a239-2cc5" primary="false"/>
+        <categoryLink id="d844-fda7-7431-c762" name="Covenant" hidden="false" targetId="cbc5-95ad-3261-53b3" primary="false"/>
+        <categoryLink id="8753-b879-b552-37ba" name="Elite" hidden="false" targetId="f68e-47cd-891e-6f9b" primary="false"/>
+        <categoryLink id="c283-a182-efe1-1184" name="Zealot" hidden="false" targetId="0df7-a746-9fc0-d263" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="297a-4cc6-620c-381e" name="Sangheili Zealot" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="1ecc-7188-4ea1-c770" name="Sangheili Zealot" hidden="false" typeId="84d6-0183-8af4-374e" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="f414-da1a-5212-13b8">7&quot;</characteristic>
+            <characteristic name="Accuracy" typeId="3605-798c-fb65-ed0d">D12</characteristic>
+            <characteristic name="Evasion" typeId="e6b1-caf0-9375-caa4">D8</characteristic>
+            <characteristic name="Martial" typeId="e9cd-bbc5-4b89-fa89">D12</characteristic>
+            <characteristic name="Wounds" typeId="20e3-5cca-0cca-2cc9">12</characteristic>
+            <characteristic name="Shields" typeId="0bd0-8e56-1bfc-7d2e">4</characteristic>
+            <characteristic name="Melee DMG" typeId="3a78-169c-8912-f462">x1 R x1 W</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="927e-0354-0dd0-11e3" name="Abilities" hidden="false">
+          <profiles>
+            <profile id="f70a-61dd-4746-80f9" name="Worthy Foe" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">This unit may reroll Martial and Evasion rolls of 1 when in combat against any unit with a starting health value of 10 or more.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="eefb-ad8b-7d21-ca52" name="Zealot&apos;s Mantra" hidden="false" typeId="7f81-1255-2087-a00d" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="cd18-1156-04b6-8618">Allied commands that target this unit cost 1 less requisition point if it is within 3&quot; of an objective point or the enemy Commander unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="a1d3-d42d-9397-9bed" name="(A) Advanced Shields" hidden="false" targetId="9c2f-e27b-1c94-10ac" type="profile"/>
+            <infoLink id="8092-4306-b241-9bb6" name="(A) Parry" hidden="false" targetId="211e-91fe-ddd5-ccfe" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d995-71fa-ee5a-ee19" name="Supply Limit Modifier" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11ae-d493-7a77-7e53" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f186-617d-7ec5-2df5" name="Over Supply Limit" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="40.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="45e4-2b68-d6d5-b5d2" name="Weapon Option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0370-edcd-e828-39d0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="143b-ce61-3ae5-a9bd" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dc13-7295-ef19-5e78" name="Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="5637-c2c2-c9df-ba58" name="Melee Weapon (Any Melee Weapon)" hidden="false" targetId="885a-dab6-3fe2-2322" type="rule"/>
+                <infoLink id="c28c-4695-e69d-d0ba" name="(W) Energy Sword" hidden="false" targetId="bee8-481d-e5d6-bff5" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="3075-aecf-b4d0-6b8d" name="Dual Plasma Rifles" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="9f35-dc03-12ca-f084" name="(W) Dual Plasma Rifles" hidden="false" targetId="a7e0-3459-f0f3-bf9b" type="profile"/>
+                <infoLink id="d289-b2b0-a537-a33a" name="Inaccurate (Dual Plasma Rifles)" hidden="false" targetId="cd86-ad78-97db-3e7b" type="rule"/>
+                <infoLink id="9929-b1e2-27da-9a33" name="Shield Piercing (Plasma Weapons)" hidden="false" targetId="7bd9-c6c2-d470-f2d3" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="2a3e-22c3-8d03-6fdd" value="100.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
